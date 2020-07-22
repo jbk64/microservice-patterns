@@ -1,29 +1,28 @@
 package transport;
 
-import java.util.Calendar;
+import business.CommandeBoisson;
 
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
-import business.Client;
+import java.util.Calendar;
 
 
 @XmlRootElement(name = "entry")
 @XmlAccessorType(XmlAccessType.NONE)
-public class AtomClient extends AtomConstruct {
+public class AtomCommandeBoisson extends AtomConstruct {
 
     @XmlElement(name = "content")
-    private Client content;
+    private CommandeBoisson content;
 
-    public AtomClient() {
+    public AtomCommandeBoisson() {
     }
 
-    public AtomClient(String selfURL, Client c, boolean fullEntry) {
+    public AtomCommandeBoisson(String selfURL, CommandeBoisson c, boolean fullEntry) {
         setId(selfURL);
-        setTitle("Client :" + c.getNom());
+        setTitle("CommandeBoisson ");
         setUpdated(Calendar.getInstance().getTime().toString());
 
         if (fullEntry) {
@@ -33,7 +32,7 @@ public class AtomClient extends AtomConstruct {
         } else addLink(new AtomLink("alternate", selfURL, MediaType.APPLICATION_ATOM_XML));
     }
 
-    public Client getContents() {
+    public CommandeBoisson getContents() {
         return content;
     }
 

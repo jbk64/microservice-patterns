@@ -1,2 +1,2 @@
 Repas-http://localhost:8080/Service_Repas/Repas
-Boisson-http://localhost:8080/Service_Boissons/Boissons
+Boisson-http://localhost:8081/Service_Boissons/Boissons
