@@ -1,7 +1,6 @@
 package services;
 
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.*;
@@ -66,5 +65,12 @@ public class EntryPoint {
             e.printStackTrace();
         }
 
+    }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("HelloWorld")
+    public String helloWorld() {
+        return "Hello, World";
     }
 }
