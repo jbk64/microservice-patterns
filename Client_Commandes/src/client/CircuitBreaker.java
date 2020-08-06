@@ -14,11 +14,12 @@ public class CircuitBreaker {
 
 	// Au debut le circuit est ferme 
 	// Si timeout le circuit se ferme 
-	// à la 5eme requete il passe a� semi-ouvert ensuite il laisse passer 3 requetes si 3 timeoutes il ouvre
+	// à la 5eme requete il passe a� semi-ouvert ensuite il laisse passer 3 requetes si 3 timeoutes il ouvre
 	public HttpResponse execute(HttpUriRequest request, HttpClient client) throws Exception {
 		URI uri = request.getURI();
         String path = getFullPath(uri);
 	// A modifier
+		return null;
 	}
 	
 	// retourne l'etat d'uri envoye
