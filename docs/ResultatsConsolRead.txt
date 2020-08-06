@@ -1,0 +1,101 @@
+trying (Reader 1)
+ Le ciruit breaker est ferme
+lance la requete vers le serveur ------------->
+ Le ciruit breaker est  ouvert
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+Au 5 eme appel il ouvre le circuit a moitier
+--------------
+Circuit moitier ouvert timeout N° =1
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+--------------
+Circuit moitier ouvert timeout N° =2
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+--------------
+Circuit moitier ouvert timeout N° =3
+ au 3eme timeouts le circuit breaker s'ouvre 
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+Au 5 eme appel il ouvre le circuit a moitier
+--------------
+Circuit moitier ouvert timeout N° =1
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+--------------
+Circuit moitier ouvert timeout N° =2
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+--------------
+Circuit moitier ouvert timeout N° =3
+ au 3eme timeouts le circuit breaker s'ouvre 
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+do something else(trying Reader 2)
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+trying (Reader 1)
+Au 5 eme appel il ouvre le circuit a moitier
+--------------
+200
+DTOCommandeRead [nomRepas=saint-jacques/fondue de poireaux, nomBoisson=Fanta, Time=null,Prix=67.0]
+done
