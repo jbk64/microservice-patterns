@@ -1,14 +1,15 @@
 package services;
 
 
-import javax.servlet.http.*;
-import javax.ws.rs.*;
-import javax.ws.rs.core.*;
-
-import com.sun.jndi.toolkit.ctx.AtomicContext;
-
-import business.*;
+import business.FileStorage;
 import restinterface.RestInterface;
+
+import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriInfo;
 
 @Path("/")
 public class EntryPoint {
@@ -48,7 +49,6 @@ public class EntryPoint {
     @Path("commandes/{id}")
     @Produces(MediaType.APPLICATION_XML)
     public String getEvent(@PathParam("id") String id) throws Exception {
-        System.out.println("Reçu requete GET /commandes/id");
         if (filePath.trim().length() == 0)
             throw new WebApplicationException(500);
 
@@ -56,7 +56,6 @@ public class EntryPoint {
         Database db = new Database();
         int rCpt = db.incRead();
         String result = null;
-        //System.out.println(" ----------> La  "+rCp");
         result = new FileStorage().read(id, filePath);
         if (result == null)
             throw new WebApplicationException(404);

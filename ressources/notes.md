@@ -1,4 +1,12 @@
-# question
+# notes
+
+## ports
+SEC_Commandes: 8080/8090
+Service_Boissons: 8081/8091
+Service_Repas: 8082/8092
+CQRSReader: 8083/8093
+CQRSReader2: 8084/8094
+PubSubHubService: 8085/8095
 
 ## Exercice 1
 

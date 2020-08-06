@@ -22,7 +22,7 @@ public class EntryPoint {
     @Path("Boissons/{idBoisson}")
     @Consumes(MediaType.APPLICATION_ATOM_XML)
     public void createReservation(@PathParam("idBoisson") int idBoisson, DTOBoisson dtoBoisson, @Context HttpServletResponse response) throws Exception {
-        boolean simulateError = true;
+        boolean simulateError = false;
 
         // simulate error
         if (simulateError) {

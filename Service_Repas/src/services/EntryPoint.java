@@ -46,6 +46,7 @@ public class EntryPoint {
     @Path("Repas/{id}")
     @Produces(MediaType.APPLICATION_ATOM_XML)
     public AtomRepas getEvent(@PathParam("id") int idRepas, @Context UriInfo uriInfo) throws Exception {
+        System.out.println("Received GET /repas request ");
         Repas repas = new Data().getRepas(idRepas);
 
         if (repas == null)

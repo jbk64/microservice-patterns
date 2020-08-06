@@ -41,11 +41,11 @@ public class EntryPoint {
             for (Service s : services) {
                 HttpResponse serviceResponse = null;
                 if (s.getType().equals("Boisson")) {
-                    DTOBoisson dtoBoisson = new DTOBoisson(dtoCommande.getUrlBoisson());
+                    DTOBoisson dtoBoisson = new DTOBoisson(dtoCommande.getId(), dtoCommande.getUrlBoisson());
                     System.out.println("Envoi de " + dtoBoisson);
                     serviceResponse = new RestInterface().putRemoteObject(dtoBoisson.getUrlBoisson(), MediaType.APPLICATION_ATOM_XML, dtoBoisson.getClass(), dtoBoisson);
                 } else {
-                    DTORepas dtoRepas = new DTORepas(dtoCommande.getUrlRepas());
+                    DTORepas dtoRepas = new DTORepas(dtoCommande.getId(), dtoCommande.getUrlRepas());
                     System.out.println("Envoi de " + dtoRepas);
                     serviceResponse = new RestInterface().putRemoteObject(dtoRepas.getUrlRepas(), MediaType.APPLICATION_ATOM_XML, dtoRepas.getClass(), dtoRepas);
                 }
@@ -75,15 +75,6 @@ public class EntryPoint {
         }
 
     }
-
-    public Object getDTO(String type, DTOCommande dtoCommande) {
-        if (type.equals("Boisson")) {
-            return new DTOBoisson(dtoCommande.getUrlBoisson());
-        } else {
-            return new DTORepas(dtoCommande.getUrlRepas());
-        }
-    }
-
 
     @GET
     @Path("Test")

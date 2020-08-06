@@ -7,13 +7,19 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class DTOBoisson {
+    private int idCommande;
     private String urlBoisson;
 
     public DTOBoisson() {
     }
 
-    public DTOBoisson(String urlBoisson) {
+    public DTOBoisson(int idCommande, String urlBoisson) {
+        this.idCommande = idCommande;
         this.urlBoisson = urlBoisson;
+    }
+
+    public int getIdCommande() {
+        return idCommande;
     }
 
     public String getUrlBoisson() {
@@ -23,7 +29,8 @@ public class DTOBoisson {
     @Override
     public String toString() {
         return "DTOBoisson{" +
-                "urlBoisson='" + urlBoisson + '\'' +
+                "idCommande=" + idCommande +
+                ", urlBoisson='" + urlBoisson + '\'' +
                 '}';
     }
 }
